@@ -110,11 +110,11 @@
         </div>
     </div>
 
-    <div class="form">
+    <div id="form">
         <div class="container">
             <div class="row">
-                <form action="" method="">
-                    <p>PLACE YOUR ORDER BY FILLING IN THE DETAILS BELOW;</p>
+                <form action="POST">
+                    <p>PLACE YOUR ORDER BY FILLING IN THE DETAILS BELOW;</p><br>
                     <label for="PIZZA">Choose a size:</label>
                     <select id="pizzaSize" name="pizzaSize">
                         <option value="large">large</option>
@@ -122,26 +122,26 @@
                         <option value="small">small</option>
                     </select>
 
-                    <label for="PIZZA">Choose your crust:</label>
-                    <select id="pizzaSize" name="pizzaSize">
+                    <label for="crust">Choose your crust:</label>
+                    <select id="crust" name="crust">
                         <option value="Crispy">Crispy</option>
                         <option value="Stuffed">Stuffed</option>
                         <option value="Glutten-Free">Glutten-Free</option>
                     </select>
 
-                    <label for="PIZZA">Toppings</label>
-                    <select id="pizzaSize" name="pizzaSize">
+                    <label for="toppings">Toppings</label>
+                    <select id="toppings" name="toppings">
                         <option value="withToppingd">With toppings</option>
                         <option value="withoutToppings">No toppings</option>
                     </select>
 
-                    <label for="PIZZA">Delivery Location</label>
-                    <select id="pizzaSize" name="pizzaSize">
+                    <label for="deliveryLocation">Delivery Location</label>
+                    <select id="deliveryLocation" name="deliveryLocation">
                         <option value="withinCbd">within CBD</option>
                         <option value="outsideCbd">outside CBD</option>
                     </select>
 
-                    <input type="submit" name="submitbutton" value="CHECKOUT" class="ORDER">
+                    <input type="submit" name="submitbutton" value="CHECKOUT" id="chcekout">
 
                 </form>
             </div>
