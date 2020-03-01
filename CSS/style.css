@@ -1,10 +1,9 @@
 *{
     padding:0px;
     margin: 0px;
+    box-sizing: border-box;
 }
-@media only screen and (max-width: 600px){
 
-}
 
 h1{
     margin-top:100px;
@@ -73,7 +72,7 @@ nav ul li a{
     line-height: 80px;
     color: gold;
     padding: 12px 30px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: lighter;
     text-decoration: none;
     font-weight: bolder;
@@ -85,7 +84,7 @@ nav ul li a:hover{
 }
 
 .background2{
-    background-image: url("");
+    background-image: url("../IMAGES/");
     height: 100%;
 }
 
