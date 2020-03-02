@@ -92,7 +92,12 @@ nav ul li a:hover{
 #form{
     margin-top: 70px;
     margin-bottom: 100px;
+    border: 1px solid #222;
+    background : #fff;
+    display: flex;
+    
 }
+
 
 
 .pizzaSize{

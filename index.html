@@ -19,7 +19,14 @@
 
 <nav>
     <ul>
-        <li><a href="#"> CONTACT US </a></li>
+        <li><a href="#" id = "contactus"> CONTACT US </a></li>
+        <script>
+            $(document).ready(function(){
+                $("#contactus").click(function(){
+                    alert("REACH US ON: +25470477762 or EMAIL US AT: jisnderi@gmail.com")
+                })
+            })
+        </script>
         <li><a href="#form"> ORDER NOW </a></li>
     </ul>
 </nav>
@@ -89,6 +96,15 @@
                         <option value="large">large</option>
                         <option value="medium">medium</option>
                         <option value="small">small</option>
+                    </select>
+
+                    <label for="type">Choose a Pizza Type:</label>
+                    <select id="pizzaType" name="type">
+                        <option value="Hawaiian">Hawaiian</option>
+                        <option value="chickenTikka">chicken Tikka/option>
+                        <option value="periPeri">Peri Peri</option>
+                        <option value="grilledPizza">Grilled Pizza</option>
+
                     </select>
 
                     <label for="crust">Choose your crust:</label>
