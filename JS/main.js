@@ -22,7 +22,7 @@ $(document).click(function(event){
     $("#checkout").click(function(){
         var pizzaSize = ("#pizzaSize").val();
         var crust = ("#crust").val();
-        var toppings = ("#toppings").val();
+        var topping = ("#toppings").val();
         var deliveryLocation = ("#deliveryLocation").val();
     });
 });
@@ -52,15 +52,5 @@ $(document).ready(function(){
         alert("Your Total Amount payable is " + totalAmtPayable)
     });
 });
-
-
-
-
-
-
-
-
-
-
 
 

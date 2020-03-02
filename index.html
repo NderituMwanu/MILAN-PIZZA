@@ -19,10 +19,10 @@
 
 <nav>
     <ul>
-        <li><a href="#" id = "contactus"> CONTACT US </a></li>
+        <li><a href="#" id="contactus"> CONTACT US </a></li>
         <script>
-            $(document).ready(function(){
-                $("#contactus").click(function(){
+            $(document).ready(function () {
+                $("#contactus").click(function () {
                     alert("REACH US ON: +25470477762 or EMAIL US AT: jisnderi@gmail.com")
                 })
             })
@@ -96,6 +96,11 @@
                         <option value="large">large</option>
                         <option value="medium">medium</option>
                         <option value="small">small</option>
+                        <script>
+                            $(document).ready(function(){
+                                var pizzaSize = parseInt(500)
+                            });
+                        </script>
                     </select>
 
                     <label for="type">Choose a Pizza Type:</label>
@@ -105,6 +110,12 @@
                         <option value="periPeri">Peri Peri</option>
                         <option value="grilledPizza">Grilled Pizza</option>
 
+                        <script>
+                            $(document).ready(function(){
+                                var pizzaType = parseInt(500)
+                            });
+                        </script>
+
                     </select>
 
                     <label for="crust">Choose your crust:</label>
@@ -112,12 +123,24 @@
                         <option value="Crispy">Crispy</option>
                         <option value="Stuffed">Stuffed</option>
                         <option value="Glutten-Free">Glutten-Free</option>
+
+                        <script>
+                            $(document).ready(function(){
+                                var crust = parseInt(500)
+                            });
+                        </script>
                     </select>
 
                     <label for="toppings">Toppings</label>
                     <select id="toppings" name="toppings">
                         <option value="withToppingd">With toppings</option>
                         <option value="withoutToppings">No toppings</option>
+
+                        <script>
+                            $(document).ready(function(){
+                                var toppings = parseInt(500)
+                            });
+                        </script>
                     </select>
 
                     <label for="deliveryLocation">Delivery Location</label>
@@ -125,6 +148,7 @@
                         $(document).ready(function () {
                             $("#deliveryLocation").click(function () {
                                 prompt("ENTER YOUR DELIVERY LOCATION")
+                                
                             });
                         });
                     </script>
@@ -136,11 +160,21 @@
                     <option value=""></option>
 
                     </select>
+                    <input type="reset" name="submitbutton" value="checkout" id="checkout" onclick = "Reset() \">
 
-
-
-                    <input type="reset" name="submitbutton" value="checkout" id="checkout" onclick="Reset();" />
-
+                    <script>
+                        $(document).ready(function(){
+                            $("#checkout").click(function(){
+                                alert("your total is" + 3000)
+                            })
+                        })
+                    </script>
+                    <script>
+                        $(document).ready(function(){
+                            var summary = parseInt(Amount*(pizzaSize + topping + pizzaType + crust))
+                            alert("total = " + 3000)
+                        });
+                    </script>
                 </form>
             </div>
         </div>
