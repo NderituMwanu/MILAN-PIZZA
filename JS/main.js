@@ -44,8 +44,13 @@ if ((pizzaSize == "0") || (crust == "0") || (toppings == "0")){
         };
 
 var totalAmtPayable = pizzaSize + crustPrice + topping;
-        alert(totalAmtPayable);
+        
 
+$(document).ready(function(){
+    $("#chackout").click(function(){
+        alert("Your Total Amount payable is " + totalAmtPayable)
+    });
+});
 
 
 
