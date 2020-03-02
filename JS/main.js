@@ -1,17 +1,19 @@
-var pizzaSize, crust, toppings, deliveryLocation
+var pizzaSize, crust, toppings, deliveryLocation, totalAmtPayable, Amount
 
 
 //constructor for deriving new instances
-function myOrder(pizzaSize, crust, toppings, deliveryLocation){
+function myOrder(pizzaSize, crust, toppings, deliveryLocation, totalAmtPayable){
     this.pizzaSize = pizzaSize;
     this.crust = crust;
     this.deliveryLocation = deliveryLocation;
+    this.totalAmtPayable = totalAmtPayable;
+    this.Amount = Amount;
 }
 
 //prices 
-var pizzaPrices = (small = 500, large = 1000, medium = 750);
-var crustPrices = (crispy = 200, Stuffed = 400, GluttenFree = 450);
-var toppings = (WithToppings = 200, WithoutToppings = 150);
+var pizzaPrice = (small = 500, large = 1000, medium = 750);
+var crustPrice = (crispy = 200, Stuffed = 400, GluttenFree = 450);
+var topping = (WithToppings = 200, WithoutToppings = 150);
 
 
 // checkout button
@@ -24,11 +26,27 @@ $(document).click(function(event){
     });
 });
 
-if (pizzaSize == 0 || crust == 0 || toppings == 0){
-    alert("kindly fill in the required fields");}
+if ((pizzaSize == "0") || (crust == "0") || (toppings == "0")){
+    alert("kindly fill in the required fields");
+}
     else{
         $("#form").show();
+    };
+
+    var costOfDelivery = "";
+    var location = "";
+
+    if (location == withinCBD){
+        var costOfDelivery = parseInt(200);
     }
+        else{
+            var costOfDelivery = parseInt(400);
+        };
+
+var totalAmtPayable = pizzaSize + crustPrice + topping;
+        alert(totalAmtPayable);
+
+
 
 
 
