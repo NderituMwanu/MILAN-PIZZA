@@ -33,7 +33,7 @@ if ((pizzaSize == "0") || (crust == "0") || (toppings == "0")){
     else{
         $("#form").show();
     };
-
+    
     var costOfDelivery = "";
     var location = "";
 
