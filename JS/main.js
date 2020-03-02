@@ -38,7 +38,7 @@ if ((pizzaSize == "0") || (crust == "0") || (toppings == "0")){
     var location = "";
 
     if (location == withinCBD){
-        var costOfDelivery = parseInt(200);
+        var costOfDelivery = parseInt(250);
     }
         else{
             var costOfDelivery = parseInt(400);
@@ -49,7 +49,7 @@ var totalAmtPayable = pizzaSize + crustPrice + topping;
 
 $(document).ready(function(){
     $("#chackout").click(function(){
-        alert("Your Total Amount payable is " + totalAmtPayable)
+        alert("Your Total is " + totalAmtPayable)
     });
 });
 
