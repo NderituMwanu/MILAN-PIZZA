@@ -37,15 +37,15 @@ This web application is built basically using:
         1. Open your terminal and type the following command, alongside
         the repositorty's link:
 
-        git clone https://
+        git clone https://github.com/NderituMwanu/MILAN-PIZZA
 
         2. Open your preferred browser.
-        3. Navigate through the contents of your now locally available repository and righclick on:
 
+        3. Navigate through the contents of your now locally available repository and righclick on:
         index.html
 
         3. Choose the browser you opened earlier on. The web application will
-        load and now you can try keying in information to test its functionality.
+        load and now you can try keying in information to test the site's functionality.
 
 ## CONTACT INFORMATION:
 

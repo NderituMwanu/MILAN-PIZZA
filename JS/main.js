@@ -1,4 +1,4 @@
-var pizzaSize, crust, toppings, deliveryLocation, totalAmtPayable, Amount
+var pizzaSize, crust, toppings, deliveryLocation, totalAmtPayable, Amount, summary
 
 
 //constructor for deriving new instances
@@ -8,6 +8,7 @@ function myOrder(pizzaSize, crust, toppings, deliveryLocation, totalAmtPayable){
     this.deliveryLocation = deliveryLocation;
     this.totalAmtPayable = totalAmtPayable;
     this.Amount = Amount;
+    this.summary = summary;
 }
 
 //prices 
