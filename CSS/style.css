@@ -16,6 +16,9 @@ h1{
     letter-spacing: 10px;
 }
 
+h2{
+    font-size: 40px;
+}
 .background{
     background-image: url(../IMAGES/381504.jpg);
     background-size: cover;
@@ -85,15 +88,16 @@ nav ul li a:hover{
 
 
 
-.form{
-    margin-top: 200px;
-
+#form{
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 
-.checkout{
-    color: black;
-}
 
 .pizzaSize{
     color: black;
+}
+
+#checkout{
+    margin-top: 20px;
 }

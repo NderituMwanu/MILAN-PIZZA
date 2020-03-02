@@ -10,8 +10,8 @@ function myOrder(pizzaSize, crust, toppings, deliveryLocation){
 
 //prices 
 var pizzaPrices = (small = 500, large = 1000, medium = 750);
-var crustPrices = (crispy = 200, Stuffed 400, Glutten-Free = 450);
-var toppings = (With toppings = 200, Without toppings = 150);
+var crustPrices = (crispy = 200, Stuffed = 400, GluttenFree = 450);
+var toppings = (WithToppings = 200, WithoutToppings = 150);
 
 
 // checkout button
@@ -29,6 +29,8 @@ if (pizzaSize == 0 || crust == 0 || toppings == 0){
     else{
         $("#form").show();
     }
+
+
 
 
 
