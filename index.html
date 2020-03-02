@@ -97,7 +97,7 @@
                         <option value="medium">medium</option>
                         <option value="small">small</option>
                         <script>
-                            $(document).ready(function(){
+                            $(document).ready(function () {
                                 var pizzaSize = parseInt(500)
                             });
                         </script>
@@ -111,7 +111,7 @@
                         <option value="grilledPizza">Grilled Pizza</option>
 
                         <script>
-                            $(document).ready(function(){
+                            $(document).ready(function () {
                                 var pizzaType = parseInt(500)
                             });
                         </script>
@@ -125,7 +125,7 @@
                         <option value="Glutten-Free">Glutten-Free</option>
 
                         <script>
-                            $(document).ready(function(){
+                            $(document).ready(function () {
                                 var crust = parseInt(500)
                             });
                         </script>
@@ -137,7 +137,7 @@
                         <option value="withoutToppings">No toppings</option>
 
                         <script>
-                            $(document).ready(function(){
+                            $(document).ready(function () {
                                 var toppings = parseInt(500)
                             });
                         </script>
@@ -148,7 +148,7 @@
                         $(document).ready(function () {
                             $("#deliveryLocation").click(function () {
                                 prompt("ENTER YOUR DELIVERY LOCATION")
-                                
+
                             });
                         });
                     </script>
@@ -166,18 +166,18 @@
                     <option value=""></option>
 
                     </select>
-                    <input type="reset" name="submitbutton" value="checkout" id="checkout" onclick = "Reset() \">
+                    <input type="reset" name="submitbutton" value="checkout" id="checkout" onclick="Reset() \">
 
                     <script>
-                        $(document).ready(function(){
-                            $("#checkout").click(function(){
+                        $(document).ready(function () {
+                            $("#checkout").click(function () {
                                 alert(" Your total is " + 3000)
                             })
                         })
                     </script>
                     <script>
-                        $(document).ready(function(){
-                            var summary = parseInt(Amount*(pizzaSize + topping + pizzaType + crust)
+                        $(document).ready(function () {
+                            var summary = parseInt(Amount * (pizzaSize + topping + pizzaType + crust)
                         });
                     </script>
                 </form>
