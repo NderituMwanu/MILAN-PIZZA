@@ -97,9 +97,9 @@
                         <option value="medium">medium</option>
                         <option value="small">small</option>
                         <script>
-                            $(document).ready(function () {
+                            
                                 var pizzaSize = parseInt(500)
-                            });
+                            
                         </script>
                     </select>
 
@@ -125,9 +125,9 @@
                         <option value="Glutten-Free">Glutten-Free</option>
 
                         <script>
-                            $(document).ready(function () {
+                            
                                 var crust = parseInt(500)
-                            });
+                        
                         </script>
                     </select>
 
@@ -137,9 +137,9 @@
                         <option value="withoutToppings">No toppings</option>
 
                         <script>
-                            $(document).ready(function () {
+                            
                                 var toppings = parseInt(500)
-                            });
+                            
                         </script>
                     </select>
 
@@ -171,14 +171,14 @@
                     <script>
                         $(document).ready(function () {
                             $("#checkout").click(function () {
-                                alert(" Your total is " + 3000)
+                                alert(" Your total is " + summary)
                             })
                         })
                     </script>
                     <script>
-                        $(document).ready(function () {
-                            var summary = parseInt(Amount * (pizzaSize + topping + pizzaType + crust)
-                        });
+                        
+                            var summary = parseInt(pizzaSize + topping + pizzaType + crust)
+                       
                     </script>
                 </form>
             </div>
